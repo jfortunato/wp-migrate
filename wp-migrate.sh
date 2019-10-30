@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: ./production-to-local.sh ssh-user@server:/path/to/public example.com
+# Usage: ./wp-migrate.sh ssh-user@server:/path/to/public example.com
 
 # TODO verify the first argument syntax is correct
 # TODO verify docker-compose is installed
