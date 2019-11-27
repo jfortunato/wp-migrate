@@ -52,3 +52,5 @@ docker exec -i "$WORDPRESS_CONTAINER_NAME" chmod +x wp-cli.phar
 docker exec -i "$WORDPRESS_CONTAINER_NAME" mv wp-cli.phar /usr/local/bin/wp
 docker exec -i "$WORDPRESS_CONTAINER_NAME" wp --allow-root search-replace http://"$DOMAIN_NAME" http://localhost:8000
 docker exec -i "$WORDPRESS_CONTAINER_NAME" wp --allow-root search-replace https://"$DOMAIN_NAME" http://localhost:8000
+docker exec -i "$WORDPRESS_CONTAINER_NAME" wp --allow-root search-replace http://www."$DOMAIN_NAME" http://localhost:8000
+docker exec -i "$WORDPRESS_CONTAINER_NAME" wp --allow-root search-replace https://www."$DOMAIN_NAME" http://localhost:8000
