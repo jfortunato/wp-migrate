@@ -35,7 +35,7 @@ echo ""
 echo ""
 echo "Please Supply SSH Password Again"
 echo "================================"
-ssh "$SSH_LOGIN" "mysqldump -u"$DB_USER" -p"$DB_PASS" "$DB_NAME"" > "$DB_NAME".sql
+ssh "$SSH_LOGIN" "mysqldump --no-tablespaces -u"$DB_USER" -p"$DB_PASS" "$DB_NAME"" > "$DB_NAME".sql
 
 echo ""
 echo ""
