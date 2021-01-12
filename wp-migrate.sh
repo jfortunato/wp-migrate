@@ -8,7 +8,7 @@
 SSH_LOGIN=`echo "$1" | cut -d':' -f1`
 PATH_TO_PUBLIC=`echo "$1" | cut -d':' -f2`
 
-CONTAINER_NAME=`basename "$PWD" | sed -r 's/-//g'`
+CONTAINER_NAME=`basename "$PWD"`
 DB_CONTAINER_NAME="$CONTAINER_NAME"_db_1
 WORDPRESS_CONTAINER_NAME="$CONTAINER_NAME"_wordpress_1
 DOMAIN_NAME=$2
